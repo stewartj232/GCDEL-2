@@ -1,0 +1,47 @@
+<html>
+<style>
+p{
+  background-color: blue;
+}
+p{
+  color: yellow;
+}
+button{
+  background-color: red;
+}
+
+</style>
+
+<form>
+  <p>
+  First Name:<br>
+  <input type="text" name="First Name">
+  <p/>
+  <p>
+  Last Name: <br>
+    <input type="text" name="Last Name">
+  </p>
+  <p>
+    Telephone Number: <br>
+    <input type="number" name="TX">
+  </p>
+  <p>
+    <input type="button" name="input" value="Submit">
+  </p>
+  <p>
+  What is your nickname? Do it in lower case the baby is sleeping..... <br>
+    <input type="text" id="nickname"></p>
+    <p>
+      <input type="button" value="change" onclick="changeToUpperCase();">
+  </p>
+  <p id="show"></p>
+
+<script>
+function changeToUpperCase() {
+    document.getElementById("nickname").value = document.getElementById("nickname").value.toUpperCase().replace(" ", "")
+}
+</script>
+</form>
+
+
+</html>
